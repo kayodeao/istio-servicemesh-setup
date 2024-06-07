@@ -80,10 +80,14 @@ So now we have the Istio component running in a cluster that automatically injec
    ```sh
    kubectl apply -f samples/addons
    ```
-2. if using minikube, you can port forward to the kiali web ui. If in cloud e.g GKE , go to the kiali manifests in the addons folder, and change service type to loadbalancer, Run the command below to get the external IP for KIALI .
+2. if using minikube, you can port forward to the kiali web ui and access using localhost. If in cloud e.g GKE , go to the kiali manifests in the addons folder, and change service type to loadbalancer, Run the command below to get the external IP for KIALI .
    ```sh
    kubectl svc -n istio-system
    ```
+   copy and paste the external ip in your browser, using http
+   ![](kiali.png)
+
+   
 
 ## Conclusion
 
