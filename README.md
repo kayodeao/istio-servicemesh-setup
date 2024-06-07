@@ -80,11 +80,16 @@ So now we have the Istio component running in a cluster that automatically injec
    ```sh
    kubectl apply -f samples/addons
    ```
-2. if using minikube, you can port forward to the kiali web ui and access using localhost. If in cloud e.g GKE , go to the kiali manifests in the addons folder, and change service type to loadbalancer, Run the command below to get the external IP for KIALI .
+2. you can port forward to the kiali web ui and access using localhost.
    ```sh
-   kubectl svc -n istio-system
+   kubectl port-forward <pod-name> <local-port>:<pod-port> -n <namespace>
    ```
-   copy and paste the external ip in your browser, using http
+   For example, you should have a pod named kiali-64c4548985-tbm4b  in the istio-system namespace, and you want to forward port 8080 on your local machine to the port on the 
+  kiali pod:
+   ```
+   kubectl port-forward kiali-64c4548985-tbm4b  8080:20001 -n istio-system
+   ```
+   
    ![](kiali.png)
 
    
