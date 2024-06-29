@@ -12,7 +12,7 @@ spec:
       name: http
       protocol: HTTP
     hosts:
-    - "buy.georgeoademo.com.ng"
+    - "yourdomain.com.ng"
   - port:
       number: 443
       name: https
@@ -21,4 +21,4 @@ spec:
       mode: SIMPLE
       credentialName: mytestapps-tls
     hosts:
-    - "buy.georgeoademo.com.ng"
+    - "yourdomain.com.ng"
