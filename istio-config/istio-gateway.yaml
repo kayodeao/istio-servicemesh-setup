@@ -12,7 +12,7 @@ spec:
       name: http
       protocol: HTTP
     hosts:
-    - "yourdomain.com.ng"
+    - "yourdomain.example.com"
   - port:
       number: 443
       name: https
@@ -21,4 +21,4 @@ spec:
       mode: SIMPLE
       credentialName: mytestapps-tls
     hosts:
-    - "yourdomain.com.ng"
+    - "yourdomain.example.com"
