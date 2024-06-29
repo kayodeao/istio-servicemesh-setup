@@ -83,7 +83,7 @@ So now we have the Istio component running in a cluster that automatically injec
    ```sh
    kubectl port-forward <pod-name> <local-port>:<pod-port> -n <namespace>
    ```
-   For example, you should have a pod named kiali-64c4548985-tbm4b  in the istio-system namespace, and you want to forward port 8080 on your local machine to the port on the 
+   For example, if you have a pod named kiali-64c4548985-tbm4b  in the istio-system namespace, and you want to forward port 8080 on your local machine to the port on the 
   kiali pod:
    ```
    kubectl port-forward kiali-64c4548985-tbm4b  8080:20001 -n istio-system
