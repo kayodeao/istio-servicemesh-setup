@@ -50,8 +50,7 @@ Before you begin, ensure you have the following:
    ```
 
 ## Step 3: Label the Namespace for Istio Sidecar proxy Injection
-  A sidecar proxy is a design pattern in microservices architecture where an additional proxy service is deployed alongside the main application service in the same deployment     unit, such as a Kubernetes pod. This proxy service handles various concerns that the main application service would otherwise need to manage itself, such as networking,       
-  security, and observability.
+  A sidecar proxy is a design pattern in microservices architecture where an additional proxy service is deployed alongside the main application service in the same deployment     unit, such as a Kubernetes pod. This proxy service handles various concerns that the main application service would otherwise need to manage itself, such as networking, security, and observability.
 
 1. **Label your namespace (replace `default` with your namespace):**
     ```sh
