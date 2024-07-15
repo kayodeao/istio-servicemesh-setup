@@ -5,7 +5,7 @@ metadata:
   namespace: istio-system
 spec:
   hosts:
-  - "buy.georgeoademo.com.ng"
+  - "yourdomain.com"
   gateways:
   - my-gateway
   http:
