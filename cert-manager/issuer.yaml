@@ -5,11 +5,11 @@ metadata:
   namespace: cert-manager
 spec:
   acme:
-    server: https://acme-v02.api.letsencrypt.org/directory
-    email: test@gmail.com
+    server: https://acme-v02.api.letsencrypt.org/directory   # The ACME server URL for Let's Encrypt
+    email: test@gmail.com           # The email address for Let's Encrypt account registration and recovery
     privateKeySecretRef:
-      name: letsencrypt-secret-key
+      name: letsencrypt-secret-key   # The name of the Kubernetes Secret resource where the ACME account private key will be stored
     solvers:
     - http01:
         ingress:
-          class: istio
+          class: istio  # Specifies that the HTTP-01 challenge will be solved using an Ingress resource with the specified class (istio)
