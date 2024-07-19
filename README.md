@@ -62,6 +62,11 @@ Before you begin, ensure you have the following:
     ```sh
     kubectl get namespace -L istio-injection
     ```
+    examine the pod
+    ```sh
+    kubectl describe pod <pod-name> -n <namespace>
+    ```
+    
     
 ## Step 4: Deploy a Sample Microservices Application
 
