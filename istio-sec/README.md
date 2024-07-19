@@ -8,3 +8,10 @@ kubectl exec -it <pod-name> -n <namespace> -c istio-proxy -- /bin/bash
 ```
  curl -o /dev/null -s -w "response_code: %{http_code}\n" http://<service>.<namespace>.svc.cluster.local:80
 ```
+
+Access the Debug Pod and Test Connectivity:
+
+Open an interactive shell in the debug pod:
+```
+kubectl exec -it debug-pod -n debug-namespace -- /bin/sh
+```
